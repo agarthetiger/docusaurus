@@ -18,3 +18,6 @@ Overall for absolutely no effort on my part the docusaurus-generated site looks 
 
 Where is the navigation for the "site"? Seems odd that by default there is no nav shown on the homepage. Maybe I need to create some folders first...
 
+## GitHub Pages
+
+Errors on the page suggest I've not got the baseUrl configured correctly. I definitely hadn't to start with, but it should be right now but still seeing css fail to load.
