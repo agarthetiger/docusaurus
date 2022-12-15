@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Docusaurus by Agar The Tiger',
   tagline: 'Dinosaurs are cool',
-  url: 'https://agarthetiger.github.io',
+  url: 'https://agarthetiger.github.io/',
   baseUrl: '/docusaurus/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
