@@ -1,6 +1,5 @@
 {
   "label": "Puppet",
-  "position": 10,
   "link": {
     "type": "generated-index",
     "description": "Let's hope I never have to touch Puppet code again."

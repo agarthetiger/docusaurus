@@ -1,6 +1,5 @@
 {
   "label": "Bash",
-  "position": 3,
   "link": {
     "type": "generated-index",
     "description": "Notes on Bash"
