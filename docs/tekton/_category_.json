@@ -1,0 +1,8 @@
+{
+  "label": "Tekton",
+  "position": 13,
+  "link": {
+    "type": "generated-index",
+    "description": "Pipelines for Kubernetes"
+  }
+}

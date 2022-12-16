@@ -1,0 +1,8 @@
+{
+  "label": "Podman",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Because friends don't let friends run docker as root."
+  }
+}
