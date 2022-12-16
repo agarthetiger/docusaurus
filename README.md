@@ -11,12 +11,17 @@ $ npm install
 ### Local Development
 
 ```
-$ npm run serve
+$ npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 Note that the search plugin being used, https://github.com/praveenn77/docusaurus-lunr-search , requires a production 'build' to generate the index. See build below.
+
+```
+npm build
+npm run serve
+```
 
 Commit straight to `main`, there is no need on a personal website to use any branching other than using `gh-pages` to serve the static website.
 
