@@ -9,7 +9,7 @@ const config = {
   title: 'Docusaurus by Agar The Tiger',
   tagline: 'Dinosaurs are cool',
   url: 'https://buildthethingright.com/',
-  baseUrl: '',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
