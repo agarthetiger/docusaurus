@@ -41,3 +41,4 @@ Thanks to the open source community who've made this project far more accessible
 * http://www.d3noob.org/2022/10/using-raspberry-pi-pico-with-prometheus.html
 * https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
 * https://www.evilmadscientist.com/2012/resistors-for-leds/
+* https://proto-pic.co.uk/product/crimp-connector-housings-2-54mm-0-1-dupont-compatible
