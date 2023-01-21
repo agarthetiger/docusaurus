@@ -20,12 +20,24 @@ I ran through several tutorials starting from flashing the onboard LED to connec
 
 Hopefully by the end of this weekend there will be something physical to show... tbc.
 
+From left to right, bytearray addresses as mounted, 
+
+1. b'($\xb8Sa"\x07\x88')
+2. ...
+
+Momentary switch leds, Vf 2.2v.
+
+
 ## References
 
 Thanks to the open source community who've made this project far more accessible to me. 
 
 * https://how2electronics.com/read-temperature-sensor-value-from-raspberry-pi-pico/
 * https://how2electronics.com/interfacing-ds18b20-sensor-with-raspberry-pi-pico/
+* https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
 * https://github.com/leszekuchacz/KitronikBME688-picow-exporter
 * https://sysdig.com/blog/prometheus-metrics/
 * https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md
+* http://www.d3noob.org/2022/10/using-raspberry-pi-pico-with-prometheus.html
+* https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
+* https://www.evilmadscientist.com/2012/resistors-for-leds/
