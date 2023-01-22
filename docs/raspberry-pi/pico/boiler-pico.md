@@ -49,6 +49,7 @@ Thanks to the open source community who've made this project far more accessible
 * https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
 * https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
 * https://mpython.readthedocs.io/en/master/library/mPython/ds18x20.html
+* https://forum.micropython.org/viewtopic.php?t=2914
 
 ### Exporting metrics for Prometheus
 
