@@ -31,7 +31,7 @@ From left to right, bytearray addresses as mounted,
 
 Momentary switch leds, Vf 2.2v. 3.3v - 2.2v = 1.1v
 1.1v / 25mA == 1.1 / 0.025 = 44 ohm resistor required. 
-... but Pi Hut said for this illuminated switch "220 to 1000 ohm resistor in series just as you would with any other LED to your 3V or higher power supply". Split the difference, 100 ohms looks fine, because splitting the difference is how electronics works... right? 
+... but Pi Hut said for this illuminated switch "220 to 1000 ohm resistor in series just as you would with any other LED to your 3V or higher power supply". Split the difference, 100 ohms looks fine, because splitting the difference is how electronics works... right? Joking aside, this worked but was felt overdriven so swapped for a 470 ohm instead which is a much more reasonable brightness. If only the product datasheet gave the recommended current for this button/led.
 
 
 ## References
