@@ -48,6 +48,7 @@ Thanks to the open source community who've made this project far more accessible
 * https://how2electronics.com/interfacing-ds18b20-sensor-with-raspberry-pi-pico/
 * https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
 * https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
+* https://mpython.readthedocs.io/en/master/library/mPython/ds18x20.html
 
 ### Exporting metrics for Prometheus
 
