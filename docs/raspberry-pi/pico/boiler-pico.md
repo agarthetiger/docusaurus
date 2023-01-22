@@ -22,11 +22,11 @@ Hopefully by the end of this weekend there will be something physical to show...
 
 From left to right, bytearray addresses as mounted, 
 
-1. b'($\xb8Sa"\x07\x88')
-2. b'(\xe0#Ja"\x07\xa7')
-3. b'(\xe2\x81~T"\x08\x95')
-4. b'(\xf7\xa0sT"\x08\x8d')
-5. b'(JPoT"\x08L')
+1. b'($\xb8Sa"\x07\x88'), hex 28u24ub8u53u61u22u07u88
+2. b'(\xe0#Ja"\x07\xa7'), hex 28ue0u23u4au61u22u07ua7
+3. b'(\xe2\x81~T"\x08\x95'), hex 28ue2u81u7eu54u22u08u95
+4. b'(\xf7\xa0sT"\x08\x8d'), hex 28uf7ua0u73u54u22u08u8d
+5. b'(JPoT"\x08L'), hex 28u4au50u6fu54u22u08u4c
 
 
 Momentary switch leds, Vf 2.2v. 3.3v - 2.2v = 1.1v
