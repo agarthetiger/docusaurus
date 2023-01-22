@@ -36,15 +36,31 @@ Momentary switch leds, Vf 2.2v. 3.3v - 2.2v = 1.1v
 
 ## References
 
-Thanks to the open source community who've made this project far more accessible to me. 
+Thanks to the open source community who've made this project far more accessible to me by doing much of the heavy lifting and sharing. 
+
+### Getting started
+
+* https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html
+
+### Reading sensors
 
 * https://how2electronics.com/read-temperature-sensor-value-from-raspberry-pi-pico/
 * https://how2electronics.com/interfacing-ds18b20-sensor-with-raspberry-pi-pico/
 * https://docs.micropython.org/en/latest/esp8266/tutorial/onewire.html
+* https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
+
+### Exporting metrics for Prometheus
+
 * https://github.com/leszekuchacz/KitronikBME688-picow-exporter
 * https://sysdig.com/blog/prometheus-metrics/
 * https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md
 * http://www.d3noob.org/2022/10/using-raspberry-pi-pico-with-prometheus.html
-* https://docs.micropython.org/en/v1.19.1/rp2/quickref.html#onewire-driver
+
+### Electronics and hardware assembbly
+
 * https://www.evilmadscientist.com/2012/resistors-for-leds/
 * https://proto-pic.co.uk/product/crimp-connector-housings-2-54mm-0-1-dupont-compatible
+
+### Reading WiFi signal strength
+
+* https://forums.raspberrypi.com/viewtopic.php?t=341577
