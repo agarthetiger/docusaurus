@@ -66,3 +66,10 @@ Thanks to the open source community who've made this project far more accessible
 ### Reading WiFi signal strength
 
 * https://forums.raspberrypi.com/viewtopic.php?t=341577
+
+### Micropython references
+
+* https://forums.raspberrypi.com/viewtopic.php?t=310062
+* https://awesome-micropython.com/
+
+
