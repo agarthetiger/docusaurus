@@ -17,6 +17,10 @@ Pin Description: GND: Power Ground  VCC: Power + (DC 3.3 ~5v) SCL: Clock Line SD
 
 # Links
 
+## BME280
+
 * https://how2electronics.com/read-temperature-sensor-value-from-raspberry-pi-pico/
 * https://microcontrollerslab.com/bme280-raspberry-pi-pico-micropython-tutorial/
+* https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html#pinout-and-design-files15
+
 
