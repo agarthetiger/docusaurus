@@ -6,6 +6,18 @@ The CloudFront Functions Javascript runtime 2.0 is compliant with ECMAScript v5.
  
 See the AWS docs for the [Javascript Runtime](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/functions-javascript-runtime-20.html).
 
+## Monitoring
+
+### Metrics
+
+Under CloudFront -> Telemetry -> Monitoring you can see metrics like throttles, errors and the cpu usage (scaled from 0 to 100). At or above 100% cpu usage, which is really execution time, your code will get terminated and the request will proceed to the CloudFront cache regardless. This means CF Functions should not be relied upon for any critical access control or restrictions on content.
+
+### Logs
+
+CF Function logs are always sent to `us-east-1`. The log group name is in the format `/aws/cloudfront/function/FunctionName`, where `FunctionName` is the name that you gave to the function when you created it.
+
+See <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-logs.html#cloudfront-function-logs>
+
 ## Quotas
 
 Cloudfront Functions and KV Stores have more restrictive limits than Lambda@Edge, many of which cannot be increased.
