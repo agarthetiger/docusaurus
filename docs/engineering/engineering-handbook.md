@@ -16,12 +16,15 @@ Ideas from the [GitLab Handbook](https://handbook.gitlab.com/handbook/values/ite
     Who are the decision-makers, what information would they need to make a decision which changes how we work?
 
 Level 1 - Worthless. If I can't get help on this fundamental level I am being fundamentally mis-treated. Some teams operate to provide services entirely at this level. The impact of what they do and how they do it should not be underestimated. It can undermine the higher levels.
+
 Level 2 - Cog. I am a cog in a machine, a potentially crucial but ultimately replaceable part. I have a clear function but no part to play in the organisation or value outsie of this limited function. 
+
 Level 3 - Valued. I feel valued for my individual contribution, my ideas matter, people listen to me and I can get things done. It is worthwhile to enagage with this company.
+
 Level 4 - Empowered. I can make things better for everyone. I can change the system and not be beaten by it. 
 
 These levels should not be sequential although they often are, and often stop before getting to level 3.
-Chris Hadfield had a dream from childhood of being an astronaut, yet he didn't feel complete even after he went to space fo rthe first time, as he felt he hadn't contributed (from An astronaut's guide to life on earth, Pre-launch, The trip takes a lifetime). 
+Chris Hadfield had a dream from childhood of being an astronaut, yet he didn't feel complete even after he went to space for the first time, as he felt he hadn't contributed (from An astronaut's guide to life on earth, Pre-launch, The trip takes a lifetime). 
 
 ## Core principles
 
