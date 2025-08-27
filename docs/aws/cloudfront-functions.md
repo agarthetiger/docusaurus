@@ -23,3 +23,7 @@ See <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-fun
 Cloudfront Functions and KV Stores have more restrictive limits than Lambda@Edge, many of which cannot be increased.
 
 * [CloudFront Functions Quotas](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html#limits-functions)
+
+## Troubleshooting
+
+Apparently if you misconfigure a CloudFront Distribution to have multiple Subject Alternate Names (SAN) but missing one specific domain, an ACM certificate valid for all SANs, all Route53 records correct, and a CloudFront Function attached to the default Behaviour as a Viewer Request, the Function will get called correctly for all domains except the one missing from the Distribution. Ask me how I know 😂
