@@ -1,0 +1,7 @@
+{
+  "label": "OpenTelemetry",
+  "link": {
+    "type": "generated-index",
+    "description": "Notes on utilising OpenTelemetry."
+  }
+}
