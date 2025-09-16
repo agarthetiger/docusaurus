@@ -9,7 +9,7 @@ As should always be the case, a lot of the power and value from OpenTelemetry co
 ## Resources
 
 * [AWS Distribution for Open Telemetry (ADOT)](https://aws-otel.github.io/)
-** Note that also here you need to instrument undici if using fetch in the [OTEL_NODE_ENABLED_INSTRUMENTATIONS](https://aws-otel.github.io/docs/getting-started/lambda/lambda-js).
+  * Note that also here you need to instrument undici if using fetch in the [OTEL_NODE_ENABLED_INSTRUMENTATIONS](https://aws-otel.github.io/docs/getting-started/lambda/lambda-js).
 * [OTel Bin](https://www.otelbin.io/) - Validate your collector.yaml configuration against known distributions. I raised a request many months ago but surprisingly you still can't validate configuration against the official OpenTelemetry Lambda Layers.
 * [Instrumentation Score](https://instrumentation-score.com/) - A project to objectively "score" your instrumentation.
 * [Blog - Instrumenting a Typescript Lambda with Honeycomb](https://dalejsalter.com/post/8afd46ad-7da2-4b2a-9cb5-9e5ae4fe6cc2/cdk-lambda-otel-honeycomb)
