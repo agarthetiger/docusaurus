@@ -6,8 +6,13 @@ The content that follows in this section will be abbreviated notes and code snip
 
 ## Basics
 
-:::note
+:::tip
 
 TypeScript transpiles to JavaScript so at runtime all of the extra type checking etc has been removed. Stop looking for the TypeScript equivalent of casting! :D Use something like ZOD or Valibot if you need/want runtime type validation.
 
 :::
+
+## Managing packages and patching
+
+[depcheck](https://www.npmjs.com/package/depcheck) or [npm-check](https://www.npmjs.com/package/npm-check) could be useful (I've not tried either yet) for removing packages which are not used. This isn't the same as npm prune which only removes modules from the `node_modules/` folder but not from package.json. 
+
