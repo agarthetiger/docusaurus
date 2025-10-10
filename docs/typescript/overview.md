@@ -6,7 +6,8 @@ The content that follows in this section will be abbreviated notes and code snip
 
 ## Basics
 
-!!! note
+:::note
 
-    TypeScript transpiles to JavaScript so at runtime all of the extra type checking etc has been removed. Stop looking for the TypeScript equivalent of casting! :D Use something like ZOD or Valibot if you need/want runtime type validation.
+TypeScript transpiles to JavaScript so at runtime all of the extra type checking etc has been removed. Stop looking for the TypeScript equivalent of casting! :D Use something like ZOD or Valibot if you need/want runtime type validation.
 
+:::
