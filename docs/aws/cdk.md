@@ -1,0 +1,7 @@
+# AWS Cloud Development Kit (CDK)
+
+## CloudFront Functions, KeyValueStore and CDK
+
+Most Constructs in CDK need to keep a unique and also consistent Logical ID to maintain idempotence across diffs and deploys. If this was not the case, resources woul dbe updated or even replaced every time a CDK deploy was run, regardless of whether there was a change to that Construct. One exception to this is CloudFront Functions KeyValueStores. The purpose of using a KVStore is to allow the config for a function to change without having to update the function. All sounds good, but if you try to update the data stored in a KVStore, CDK will error, saying it needs to replace the KVStore in order to apply the update but the name hasn't changed. This is the case whether the keyValueStoreName property is set explicitly in code or whether CDK generates a name automatically. A workaround to this could be to manually update the name every time the data changes, but manual changes are prone to being forgotten and add to the cognitive load of working with any given codebase. A better solution (in lieu of a "fix" so that the generated name is updated when the data changes) is to name the property based on a hash of the data stored. This eliminates any need to manually update the name and retains the idempotence of the IaC. 
+
+Interestingly, the AWS API can update a KeyValueStore without requiring a name change, so I don't know why this isn't the same behaviour in CDK, possibly to maintain the ability to automatically rollback if an update to a Stack fails?
