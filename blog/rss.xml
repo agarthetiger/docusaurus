@@ -4,7 +4,7 @@
         <title>Docusaurus by Agar The Tiger Blog</title>
         <link>https://buildthethingright.com/blog</link>
         <description>Docusaurus by Agar The Tiger Blog</description>
-        <lastBuildDate>Fri, 07 Nov 2025 10:33:05 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 13 Jan 2026 22:18:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Q2 2023 Tech diary]]></title>
             <link>https://buildthethingright.com/blog/2023-q2-tech-diary</link>
             <guid>2023-q2-tech-diary</guid>
-            <pubDate>Fri, 07 Nov 2025 10:33:05 GMT</pubDate>
+            <pubDate>Tue, 13 Jan 2026 22:18:50 GMT</pubDate>
             <description><![CDATA[Thoughts from Q2 2023.]]></description>
             <content:encoded><![CDATA[<p>Thoughts from Q2 2023. </p><h1>Backstage.io</h1><p>I've been investigating <a href="https://backstage.io/" target="_blank" rel="noopener noreferrer">backstage.io</a>, both self-hosted on AWS and via a SaaS solution like <a href="https://roadie.io/" target="_blank" rel="noopener noreferrer">roadie.io</a>. Long story short, the deployment and configuration of backstage is far from trivial. There is an initial amount of knowledge required in order to set it up even vaguely for production. The documentation is ok to get you started, but has a long way to go. Getting running locally is painless, but the next step to deploy and configure as production is much more involved and the documentation is not clear. Depending on your IT policy, access to the backstage community on Discord may or may not be accessible. </p><p>Things you have to do yourself with Backstage include configuring an authentication provider, which doesn't stop users logging in, that's another thing you have to do. Creating roles and a permissions policy is another thing you have to do from scratch. Spotify have a plugin bundle in beta which will be a paid-for offering, one of the things they have is RBAC and GUI configuration. I'd rather it was IaC, but there is also value in providing a simple interface for user management too. </p><h1>Productivity is an outcome, not a goal</h1><p>Research like <a href="https://queue.acm.org/detail.cfm?id=3595878" target="_blank" rel="noopener noreferrer">this</a> may be using the term <code>productivity</code> to get the attention of the c-suite, but the human factor matters more. Developer experience, and enablement is the goal for me. The <a href="https://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work" target="_blank" rel="noopener noreferrer">happiness advantage</a> is real. I'm reminded of the Inner game of tennis again, why do we work? Is it mastery, as suggested in Drive by Daniel Pink?</p>]]></content:encoded>
             <category>tech</category>
