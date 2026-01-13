@@ -1,0 +1,3 @@
+# Developing a Home Assistant Add-on
+
+See [the Home Assistant docs](https://developers.home-assistant.io/docs/add-ons/) for how to get started...
