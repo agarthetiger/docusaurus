@@ -23,7 +23,7 @@ jobs:
         run: |
           echo changelog=$(echo -n ${{ inputs.changelog }} | tr -cs '[:alnum:][:blank:]') >> $GITHUB_ENV
       - name: Convert changelog to Atlassian Document Format (adf)
-        uses: domgen/ccoe-ci-cd-actions/.github/actions/markdown-to-adf@stable
+        uses: madeupaction/markdown-to-adf@stable
         with:
           markdown: "${{ env.changelog }}"
 
