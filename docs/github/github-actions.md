@@ -59,12 +59,12 @@ jobs:
 
 ## Creating JS or TS GHA Actions
 
-See <https://docs.github.com/en/actions/tutorials/create-actions/create-a-javascript-action> for the docs about how to create custom actions for GitHub Actions (thanks for overloading that word GitHub!). Advantages of this include being able to use Jest or similar to execute tests against the code being written. There is a framework called [act](https://github.com/nektos/act), however it suffers from the same high-level issues as trying to run Jenkins locally in a corporate environment, which is the amount of setup required to reproduce a sufficiently representative environment. Do you have the same runner labels? Do you have access to the necessary secrets/auth tokens etc? 
+See [GitHub](https://docs.github.com/en/actions/tutorials/create-actions/create-a-javascript-action) for the docs about how to create custom actions for GitHub Actions (thanks for overloading that word GitHub!). Advantages of this include being able to use Jest or similar to execute tests against the code being written. There is a framework called [act](https://github.com/nektos/act), however it suffers from the same high-level issues as trying to run Jenkins locally in a corporate environment, which is the amount of setup required to reproduce a sufficiently representative environment. Do you have the same runner labels? Do you have access to the necessary secrets/auth tokens etc? 
 
 ### Example repos
 
-* Javascript - <https://github.com/actions/javascript-action>
-* TypeScript - <https://github.com/actions/typescript-action>
+* [Javascript](https://github.com/actions/javascript-action)
+* [TypeScript](https://github.com/actions/typescript-action)
 
 ## References
 

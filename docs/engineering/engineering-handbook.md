@@ -55,7 +55,7 @@ This is a counter to the anti-pattern of low hanging fruit, which may be easy bu
 
 Don't make engineers think about documentation more than necessary. Create templates for key doc types, which lead the author to creating useful content. Define a structure or tagging mechanism, so that any docs which need to be updated are easy to find. If it's not worth the time to keep any given document up-to-date, don't write it in the first place.
 
-See <https://www.writethedocs.org/videos/eu/2017/the-four-kinds-of-documentation-and-why-you-need-to-understand-what-they-are-daniele-procida/>
+See [four-kinds-of-documentation](https://www.writethedocs.org/videos/eu/2017/the-four-kinds-of-documentation-and-why-you-need-to-understand-what-they-are-daniele-procida/)
 
 ## Batch size
 

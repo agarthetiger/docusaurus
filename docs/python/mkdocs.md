@@ -7,12 +7,14 @@ Good documentation is vital for any enterprise IT team to publish shared practic
 # CI deployments to GitHub Pages with Travis-CI
 To publish from master onto the site served from the gh-pages branch I've used Travis CI for this open source site. I based my .travis.yml file on [Derek Weitzel's blog post](https://derekweitzel.com/2017/02/08/deploying-docs-on-github-with-travisci/). As this was my first time using Travis I didn't initally understand what every line was for. A little piece of me dies whenever I see people cutting and pasting from the internet and executing code, or worse just "curl bash piping", especially in an enterprise organisation when they have no idea what code they are running. I've seen that happen way more times than I'd like. Anyway, here is my breakdown of the original script, followed by my enhancements. 
 
+```yaml
     env:
       global:
       - GIT_NAME: "'Markdown autodeploy'"
       - GIT_EMAIL: djw8605@gmail.com
       - GH_REF: git@github.com:opensciencegrid/security.git
     language: python
+```
 
 Set some environment variables to use later in the job. Setting the language to python tells Travis CI to run this job on a docker container with python and pip pre-installed. 
 
@@ -30,10 +32,12 @@ This before_script phase will run prior to the (build) script section running. I
 
 MKDocs needs to be able to commit and push to the gh-pages branch in the git repository. The openssl command decrypts the private ssh deploy key, then we limit the permissions and add the key to the running ssh agent. Restricting permissions is required otherwise ssh-add will refuse to add the overly permissive private key file. The eval statement is required to set the apropriate environment variables for the current shell instance so that you can connect to it with ssh-add.  
 
+```yaml
     - git config user.name "Automatic Publish"
     - git config user.email "djw8605@gmail.com"
     - git remote add gh-token "${GH_REF}";
     - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+```
 
 These steps are required in order for mkdocs to push to the GitHub gh-pages branch. In order to understand why, we need to look at the build log which shows Travis CI running something like the following
 
@@ -48,7 +52,9 @@ The other issue is that we haven't provided a GitHub token or credentials to aut
 
 Back to the original script, and adding a 2nd remote allows the additional branches to be cloned over ssh and also to be pushed to using the decrypted key added to the ssh agent earlier for authentication. The fetch command can be simplified from the example because the initial `git fetch gh-token` fetches all branches. 
 
+```yaml
     - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then echo "Pushing to github"; PYTHONPATH=src/ mkdocs gh-deploy -v --clean --remote-name gh-token; git push gh-token gh-pages; fi;
+```
 
 This line first checks to see whether the build was triggered from a Pull Request. Technically this could be avoided, because what we're doing here is building and deploying the website. We could build the site in the script phase of the .travis.yml file and then have all this ssh, git and deploy code running from the deploy phase. This is because the [deploy phase is always skipped for Pull Requests](https://docs.travis-ci.com/user/deployment/#pull-requests). The [script provider](https://docs.travis-ci.com/user/deployment/script/) for deployments requires the script be defined in an external file, which is executed with bash. I've refactored this in my version, as the script example from the blog post is essentially individual bash commands in a yaml dictionary it was quick to translate into a file. Adding `set -e` to the file also allows the script to fail fast and terminate on the first non-zero exit code from a command. Failing fast on error is possibly but ugly to accomplish in the .travis.yml file, requiring every line to append `|| travis_terminate 1` and even this approach has [problems](https://github.com/travis-ci/travis-ci/issues/1066#issuecomment-425757599).
 
@@ -56,6 +62,7 @@ This line first checks to see whether the build was triggered from a Pull Reques
 
 My yaml file looks like this.
 
+```yaml
     language: python
     branches:
       only:
@@ -73,5 +80,6 @@ My yaml file looks like this.
       script: bash travis-ci/deploy-to-gh-pages.sh
       on:
         branch: master 
+```
 
 I kept the --depth option to still shallow clone the repo with a single branch for the build. Using the branches whitelist I could remove the requirement to check the branch name later in the script, and using a deploy phase meant no additional logic is required to check for pull requests or the branch in the shell script travis-ci/deploy-to-gh-pages.sh. deploy.skip_cleanup stops Travis from stashing changes in the workspace between the (build) script and deploy phases. 

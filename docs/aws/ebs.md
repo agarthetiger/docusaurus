@@ -6,6 +6,5 @@ For unlimited instances, you should monitor the VolumeIOPSExceededCheck and Volu
 
 ## References
 
-* <https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage-gp3-migration-selection.html>
-* <https://docs.aws.amazon.com/ebs/latest/userguide/ebs-io-characteristics.html#ebs-io-metrics>
-* 
+* [emr-plan-storage-gp3-migration-selection](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage-gp3-migration-selection.html)
+* [ebs-io-characteristics](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-io-characteristics.html#ebs-io-metrics)

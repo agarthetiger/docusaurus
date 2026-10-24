@@ -16,7 +16,7 @@ Under CloudFront -> Telemetry -> Monitoring you can see metrics like throttles, 
 
 CF Function logs are always sent to `us-east-1`. The log group name is in the format `/aws/cloudfront/function/FunctionName`, where `FunctionName` is the name that you gave to the function when you created it.
 
-See <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-logs.html#cloudfront-function-logs>
+See [edge-functions-logs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-logs.html#cloudfront-function-logs)
 
 ## Quotas
 
