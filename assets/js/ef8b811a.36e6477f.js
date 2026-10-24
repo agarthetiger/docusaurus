@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus||=[]).push([[8947],{6600(e){e.exports=JSON.parse('{"authors":[{"name":"Andrew Garner","title":"Software Engineer","url":"https://github.com/agarthetiger","imageURL":"https://github.com/agarthetiger.png","key":"agar","page":null,"count":1}]}')}}]);

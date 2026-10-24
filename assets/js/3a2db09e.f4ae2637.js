@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus||=[]).push([[8121],{8070(s){s.exports=JSON.parse('{"tags":[{"label":"tech","permalink":"/blog/tags/tech","count":1}]}')}}]);
