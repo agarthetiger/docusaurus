@@ -4,7 +4,7 @@
         <title>Docusaurus by Agar The Tiger Blog</title>
         <link>https://buildthethingright.com/blog</link>
         <description>Docusaurus by Agar The Tiger Blog</description>
-        <lastBuildDate>Sat, 24 Oct 2026 21:41:54 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Oct 2026 21:49:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Q2 2023 Tech diary]]></title>
             <link>https://buildthethingright.com/blog/2023-q2-tech-diary</link>
             <guid>https://buildthethingright.com/blog/2023-q2-tech-diary</guid>
-            <pubDate>Sat, 24 Oct 2026 21:41:54 GMT</pubDate>
+            <pubDate>Sat, 24 Oct 2026 21:49:00 GMT</pubDate>
             <description><![CDATA[Thoughts from Q2 2023.]]></description>
             <content:encoded><![CDATA[<p>Thoughts from Q2 2023.</p>
 <p>I've been investigating <a href="https://backstage.io/" target="_blank" rel="noopener noreferrer" class="">backstage.io</a>, both self-hosted on AWS and via a SaaS solution like <a href="https://roadie.io/" target="_blank" rel="noopener noreferrer" class="">roadie.io</a>. Long story short, the deployment and configuration of backstage is far from trivial. There is an initial amount of knowledge required in order to set it up even vaguely for production. The documentation is ok to get you started, but has a long way to go. Getting running locally is painless, but the next step to deploy and configure as production is much more involved and the documentation is not clear. Depending on your IT policy, access to the backstage community on Discord may or may not be accessible.</p>

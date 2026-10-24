@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdocusaurus||=[]).push([[7472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Q2 2023 Tech diary","permalink":"/blog/2023-q2-tech-diary","unlisted":false,"date":"2026-10-24T21:41:54.000Z"}]}')}}]);
